@@ -2,42 +2,42 @@
 Aplikasi pengecekan sebuah angka, apakah angka tersebut adalah bilangan prima atau bukan
 
 ### Flowchart
-[Start]
- |
- V
-Input angka (num)
- |
- V
-Jika num < 2, maka
- |  |
- |  V
- |  Tampilkan "Bukan bilangan prima"
- |  |
- |  V
- |  [End]
- |
- V
-Inisialisasi variabel i = 2
- |
- V
-Selama i <= num/2, lakukan
- |  |
- |  V
- |  Jika num % i = 0, maka
- |  |  |
- |  |  V
- |  |  Tampilkan "Bukan bilangan prima"
- |  |  |
- |  |  V
- |  |  [End]
- |  |
- |  V
- |  Tingkatkan i dengan 1
- |  |
- |  V
- |
- V
-Tampilkan "Bilangan prima"
- |
- V
-[End]
+[Start]<br>
+ | <br>
+ V <br>
+Input angka (num) <br>
+ | <br>
+ V <br>
+Jika num < 2, maka <br>
+ |  | <br>
+ |  V <br>
+ |  Tampilkan "Bukan bilangan prima" <br>
+ |  | <br>
+ |  V <br>
+ |  [End] <br>
+ | <br>
+ V <br>
+Inisialisasi variabel i = 2 <br>
+ | <br>
+ V <br>
+Selama i <= num/2, lakukan <br>
+ |  | <br>
+ |  V <br>
+ |  Jika num % i = 0, maka <br>
+ |  |  | <br>
+ |  |  V <br>
+ |  |  Tampilkan "Bukan bilangan prima" <br>
+ |  |  | <br>
+ |  |  V <br>
+ |  |  [End] <br>
+ |  | <br>
+ |  V <br>
+ |  Tingkatkan i dengan 1 <br>
+ |  | <br>
+ |  V <br>
+ | <br>
+ V <br>
+Tampilkan "Bilangan prima" <br>
+ | <br>
+ V <br>
+[End] <br>
