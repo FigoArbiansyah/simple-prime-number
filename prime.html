@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Prime Number</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="grid place-items-center min-h-screen bg-slate-800">
+	<div>
+		<p class="mb-2 text-white text-center" id="result">&nbsp;</p>
+		<input
+			type="number"
+			name="input-number"
+			id="input-number"
+			class="block outline-none border rounded p-2 w-[18rem] text-white bg-transparent mb-3"
+			placeholder="Masukkan angka"
+		>
+		<button type="button" id="btn-submit" class="block bg-teal-500 text-white py-2 w-[18rem] rounded active:scale-75 transition-all ease duration-300 active:bg-opacity-75">Submit</button>
+	</div>
+	<script type="text/javascript">
+		// GET BUTTON ELEMENT
+		const btn = document.getElementById('btn-submit')
+
+		// GET P ELEMENT
+		const resultElement = document.getElementById('result');
+
+		// GET INPUT ELEMENT
+		const inputNumber = document.getElementById('input-number');
+		inputNumber.value = 0
+
+		const isPrime = (num) => {
+			if (num < 2) {
+				return false
+			}
+
+			for (let i = 2; i <= num / 2; i++) {
+				if (num % i == 0) {
+					return false
+				}
+			}
+
+			return true
+		}
+
+		const handleClick = () => {
+			const numValue = Number(inputNumber.value)
+			if (isPrime(numValue)) {
+				resultElement.innerText = `${numValue} adalah bilangan prima`
+			} else {
+				resultElement.innerText = `${numValue} bukan bilangan prima`
+			}
+		}
+
+		btn.addEventListener('click', handleClick)
+
+	</script>
+</body>
+</html>
